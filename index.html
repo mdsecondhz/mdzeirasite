@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Livros</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">LivroZ</div>
+    <div class="header-actions">
+      <button id="themeToggle" class="theme-toggle" type="button">Modo claro</button>
+      <nav class="menu">
+        <button class="nav-btn active" data-page="home">Início</button>
+        <button class="nav-btn" data-page="gallery">Galeria</button>
+        <button class="nav-btn" data-page="bestsellers">Mais vendidos</button>
+        <button class="nav-btn" data-page="search">Buscar</button>
+        <button class="nav-btn" data-page="account">Conta</button>
+        <button class="nav-btn" data-page="userPanel">Painel</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="page active-page">
+      <div class="hero">
+        <div>
+          <span class="eyebrow">Leia mais hoje</span>
+          <h1>Um catálogo de livros feito para você.</h1>
+          <p>Encontre histórias, aprenda com não-ficção e gerencie sua biblioteca pessoal em um só lugar.</p>
+          <div class="hero-actions">
+            <button class="primary" data-page="gallery">Ver galeria</button>
+            <button class="secondary" data-page="account">Criar conta</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=700&q=80" alt="Livros" />
+        </div>
+      </div>
+      <div class="cards-row">
+        <article class="info-card">
+          <h2>Login seguro</h2>
+          <p>Entre na sua conta para acessar a estante e seus livros favoritos.</p>
+        </article>
+        <article class="info-card">
+          <h2>Catálogo completo</h2>
+          <p>Explore livros por categorias e encontre sua próxima leitura.</p>
+        </article>
+        <article class="info-card">
+          <h2>Painel do usuário</h2>
+          <p>Veja seu perfil e gerencie sua experiência de leitura.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="page">
+      <div class="section-header">
+        <div>
+          <h2>Galeria de livros</h2>
+          <p>Veja uma seleção de exemplo com os principais livros por categoria.</p>
+        </div>
+      </div>
+      <div id="galleryCategories" class="category-filters"></div>
+      <div id="bookGrid" class="book-grid"></div>
+    </section>
+
+    <section id="bestsellers" class="page">
+      <div class="section-header">
+        <div>
+          <h2>Mais vendidos</h2>
+          <p>Os títulos que estão em alta agora.</p>
+        </div>
+      </div>
+      <div id="bestsellerGrid" class="book-grid"></div>
+    </section>
+
+    <section id="search" class="page">
+      <div class="section-header">
+        <div>
+          <h2>Pesquisar livros</h2>
+          <p>Busque por título, autor ou categoria.</p>
+        </div>
+      </div>
+      <div class="search-panel">
+        <input id="searchInput" type="search" placeholder="Pesquisar livros..." />
+        <div id="searchCategories" class="category-filters"></div>
+      </div>
+      <div id="searchResults" class="book-grid"></div>
+    </section>
+
+    <section id="account" class="page">
+      <div class="form-card account-card">
+        <div class="account-switch">
+          <button class="account-tab active" type="button" data-account="login">Login</button>
+          <button class="account-tab" type="button" data-account="register">Cadastro</button>
+        </div>
+        <form id="loginForm" class="form-stack active-form">
+          <h2>Entrar</h2>
+          <p>Use sua conta para acessar o painel e outras funções.</p>
+          <label>
+            E-mail
+            <input type="email" id="loginEmail" placeholder="seu@exemplo.com" required />
+          </label>
+          <label>
+            Senha
+            <input type="password" id="loginPassword" placeholder="Senha" required />
+          </label>
+          <button type="submit" class="primary">Entrar</button>
+          <p class="form-note">Ainda não tem conta? <a href="#" data-account="register">Cadastre-se</a>.</p>
+          <p class="form-note">Usuário de teste: <strong>usuario@livroz.com</strong> / <strong>123456</strong></p>
+          <p id="loginMessage" class="message"></p>
+        </form>
+        <form id="registerForm" class="form-stack">
+          <h2>Cadastro</h2>
+          <p>Crie sua conta e comece a personalizar sua estante.</p>
+          <label>
+            Nome
+            <input type="text" id="registerName" placeholder="Seu nome" required />
+          </label>
+          <label>
+            E-mail
+            <input type="email" id="registerEmail" placeholder="seu@exemplo.com" required />
+          </label>
+          <label>
+            Senha
+            <input type="password" id="registerPassword" placeholder="Senha" required minlength="6" />
+          </label>
+          <button type="submit" class="primary">Cadastrar</button>
+          <p class="form-note">Já possui conta? <a href="#" data-account="login">Faça login</a>.</p>
+          <p id="registerMessage" class="message"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="userPanel" class="page">
+      <div class="panel-card">
+        <div class="panel-header">
+          <div>
+            <h2>Painel do usuário</h2>
+            <p>Veja seu perfil e acesse seus livros salvos.</p>
+          </div>
+          <button id="logoutBtn" class="secondary">Sair</button>
+        </div>
+        <div class="profile-box">
+          <div class="profile-avatar">
+            <img id="profileAvatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=200&q=80" alt="Avatar do usuário" />
+          </div>
+          <h3>Bem-vindo, <span id="profileName">Visitante</span></h3>
+          <p id="profileEmail">Faça login para acessar sua conta.</p>
+          <p class="profile-meta">E-mail: <strong id="profileEmailValue">-</strong></p>
+          <p class="profile-meta">Livros salvos: <strong id="favoriteCount">0</strong></p>
+        </div>
+        <div class="user-content">
+          <div class="user-settings">
+            <h3>Configurações da conta</h3>
+            <form id="updateProfileForm" class="settings-form">
+              <label>
+                Foto de perfil (URL)
+                <input type="url" id="profileImageInput" placeholder="Cole o link da imagem" />
+              </label>
+              <label>
+                Novo nome de usuário
+                <input type="text" id="profileNameInput" placeholder="Novo nome" />
+              </label>
+              <label>
+                Senha atual
+                <input type="password" id="currentPasswordForProfile" placeholder="Senha atual" />
+              </label>
+              <button type="submit" class="secondary">Atualizar perfil</button>
+              <p id="profileUpdateMessage" class="message"></p>
+            </form>
+            <form id="changePasswordForm" class="settings-form">
+              <label>
+                Senha atual
+                <input type="password" id="currentPassword" placeholder="Senha atual" required />
+              </label>
+              <label>
+                Nova senha
+                <input type="password" id="newPassword" placeholder="Nova senha" required minlength="6" />
+              </label>
+              <label>
+                Confirmar nova senha
+                <input type="password" id="confirmNewPassword" placeholder="Confirmar nova senha" required minlength="6" />
+              </label>
+              <button type="submit" class="secondary">Alterar senha</button>
+              <p id="passwordUpdateMessage" class="message"></p>
+            </form>
+          </div>
+          <div>
+            <h3>Minha Estante</h3>
+            <div id="favoriteBooks" class="favorite-list">
+              <p class="empty-state">Adicione livros à estante a partir da galeria.</p>
+            </div>
+          </div>
+          <div>
+            <h3>Livros emprestados</h3>
+            <div id="borrowedBooks" class="favorite-list">
+              <p class="empty-state">Empreste livros na galeria para ver aqui.</p>
+            </div>
+          </div>
+          <div>
+            <h3>Atalhos</h3>
+            <ul class="shortcut-list">
+              <li>Personalize suas leituras</li>
+              <li>Gerencie seus favoritos</li>
+              <li>Volte à galeria sempre que quiser</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="bookModal" class="book-modal hidden" aria-hidden="true">
+    <div class="modal-overlay" data-close="true"></div>
+    <div class="modal-content">
+      <button id="modalClose" class="modal-close" type="button">×</button>
+      <div class="modal-body">
+        <h3 id="modalTitle">Título do livro</h3>
+        <p class="modal-meta"><strong>Autor:</strong> <span id="modalAuthor"></span></p>
+        <p class="modal-meta"><strong>Categoria:</strong> <span id="modalCategory"></span></p>
+        <p class="modal-label">Biografia do autor</p>
+        <p id="modalBio" class="modal-text"></p>
+        <p class="modal-label">Descrição do livro</p>
+        <p id="modalDescription" class="modal-text"></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="toastMessage" class="toast"></div>
+
+  <footer class="footer">
+    <p>Catálogo de livros simples com login, cadastro, galeria e painel do usuário.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
