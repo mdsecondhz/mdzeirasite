@@ -1,0 +1,44 @@
+﻿[
+  {
+    "title": "O Pequeno Príncipe",
+    "author": "Antoine de Saint-Exupéry",
+    "category": "Ficção",
+    "description": "Uma jornada poética sobre amizade e essência.",
+    "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=700&q=80"
+  },
+  {
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "category": "História",
+    "description": "Uma breve história da humanidade e seus grandes marcos.",
+    "image": "https://images.unsplash.com/photo-1496104679561-38f3f5d3d3a0?auto=format&fit=crop&w=700&q=80"
+  },
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "category": "Distopia",
+    "description": "Um clássico sobre vigilância e controle social.",
+    "image": "https://images.unsplash.com/photo-1514361892630-0e4e2a6f5e37?auto=format&fit=crop&w=700&q=80"
+  },
+  {
+    "title": "A Arte da Guerra",
+    "author": "Sun Tzu",
+    "category": "Estratégia",
+    "description": "Lições antigas que ainda valem para decisões modernas.",
+    "image": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=700&q=80"
+  },
+  {
+    "title": "O Hobbit",
+    "author": "J.R.R. Tolkien",
+    "category": "Aventura",
+    "description": "Uma aventura épica rumo ao coração da Terra Média.",
+    "image": "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=700&q=80"
+  },
+  {
+    "title": "Mindset",
+    "author": "Carol S. Dweck",
+    "category": "Desenvolvimento",
+    "description": "Como o modo de pensar impacta sucesso e aprendizado.",
+    "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=700&q=80"
+  }
+]

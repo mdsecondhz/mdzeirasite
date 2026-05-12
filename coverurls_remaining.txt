@@ -1,0 +1,33 @@
+Admirável Mundo Novo | Aldous Huxley | https://covers.openlibrary.org/b/id/13623695-L.jpg
+Fahrenheit 451 | Ray Bradbury | https://covers.openlibrary.org/b/id/12993656-L.jpg
+Laranja Mecânica | Anthony Burgess | https://covers.openlibrary.org/b/id/13711573-L.jpg
+ERROR: O Senhor das Moscas - The read operation timed out
+O Senhor das Moscas | William Golding | NO_COVER
+A Estrada | Cormac McCarthy | https://covers.openlibrary.org/b/id/14844146-L.jpg
+Brave New World Revisited | Aldous Huxley | https://covers.openlibrary.org/b/id/41918-L.jpg
+A Última Pergunta | Isaac Asimov | NO_COVER
+O Hobbit | J.R.R. Tolkien | https://covers.openlibrary.org/b/id/15121777-L.jpg
+A Ilha do Tesouro | Robert Louis Stevenson | https://covers.openlibrary.org/b/id/12370194-L.jpg
+Viagem ao Centro da Terra | Jules Verne | https://covers.openlibrary.org/b/id/12390946-L.jpg
+A Volta ao Mundo em 80 Dias | Jules Verne | https://covers.openlibrary.org/b/id/13689116-L.jpg
+Moby Dick | Herman Melville | https://covers.openlibrary.org/b/id/10544254-L.jpg
+As Aventuras de Tom Sawyer | Mark Twain | https://covers.openlibrary.org/b/id/11123954-L.jpg
+Robinson Crusoé | Daniel Defoe | https://covers.openlibrary.org/b/id/368541-L.jpg
+Os Três Mosqueteiros | Alexandre Dumas | https://covers.openlibrary.org/b/id/5277967-L.jpg
+A Liga Extraordinária | Alan Moore | https://covers.openlibrary.org/b/id/12755045-L.jpg
+O Código Da Vinci | Dan Brown | https://covers.openlibrary.org/b/id/14181680-L.jpg
+Mindset | Carol S. Dweck | https://covers.openlibrary.org/b/id/746414-L.jpg
+ERROR: Os 7 Hábitos das Pessoas Altamente Eficazes - The read operation timed out
+Os 7 Hábitos das Pessoas Altamente Eficazes | Stephen R. Covey | https://covers.openlibrary.org/b/id/13122863-L.jpg
+Como Fazer Amigos e Influenciar Pessoas | Dale Carnegie | https://covers.openlibrary.org/b/id/14598570-L.jpg
+A Startup Enxuta | Eric Ries | https://covers.openlibrary.org/b/id/7258484-L.jpg
+Pense e Enriqueça | Napoleon Hill | https://covers.openlibrary.org/b/id/9380637-L.jpg
+Essencialismo | Greg McKeown | https://covers.openlibrary.org/b/id/10401970-L.jpg
+O Poder do Hábito | Charles Duhigg | https://covers.openlibrary.org/b/id/13752488-L.jpg
+Trabalhe 4 Horas por Semana | Tim Ferriss | https://covers.openlibrary.org/b/id/539652-L.jpg
+Quem Pensa, Enriquece | Napoleon Hill | https://covers.openlibrary.org/b/id/14542536-L.jpg
+O Lado Difícil das Situações Difíceis | Ben Horowitz | https://covers.openlibrary.org/b/id/8436126-L.jpg
+Os Segredos da Mente Milionária | T. Harv Eker | https://covers.openlibrary.org/b/id/13876089-L.jpg
+O Gestor Eficaz | Peter F. Drucker | https://covers.openlibrary.org/b/id/12372561-L.jpg
+A Arte da Felicidade | Dalai Lama | https://covers.openlibrary.org/b/id/13710386-L.jpg
+O Jeito Harvard de Ser Feliz | Shawn Achor | NO_COVER
